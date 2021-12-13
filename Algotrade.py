@@ -63,7 +63,7 @@ def format_price(n):
 
 def getstockdatavec(key):
     vec = []
-    lines = open(r'D:\Cheque\icicibank.csv','r').read().splitlines()
+    lines = open(r'filename to be input from here','r').read().splitlines()
     for line in lines[1:]:
         if line.split(",")[4] != "null":
             vec.append(float(line.split(",")[4]))
